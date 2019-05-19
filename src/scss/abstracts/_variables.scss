@@ -1,0 +1,45 @@
+// color palette
+$color-red-300: #f5e0e3;
+$color-red-400: #ffc2c9;
+$color-red-500: #f4364c;
+$color-red-600: #c10b20;
+$color-red-700: #790714;
+
+$color-green-300: #e3f5e0;
+$color-green-400: #cbffc2;
+$color-green-500: #40bf48;
+$color-green-600: #33993a;
+$color-green-700: #246b29;
+
+$color-blue-300: #e0eaf5;
+$color-blue-400: #c2deff;
+$color-blue-500: #0076ff;
+$color-blue-600: #0f5fbd;
+$color-blue-700: #0a3e7b;
+
+$color-yellow-300: #faefdb;
+$color-yellow-400: #ffe9c2;
+$color-yellow-500: #ffa300;
+$color-yellow-600: #cc8200;
+$color-yellow-700: #805200;
+
+$color-gray-100: #fff;
+$color-gray-200: #f8f9fa;
+$color-gray-300: #ebedef;
+$color-gray-400: #dee2e6;
+$color-gray-500: #acb5bd;
+$color-gray-600: #848890;
+$color-gray-700: #525760;
+$color-gray-800: #2e3138;
+
+// grid columns
+$grid-column-number: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// container padding
+$container-padding-x: $grid-gutter-width !default;
+
+// screen sizes
+$screen--lg: 1200px;
+$screen--md: 900px;
+$screen--sm: 600px;

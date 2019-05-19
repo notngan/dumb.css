@@ -1,0 +1,24 @@
+// screen media queries 
+@mixin screen--lg-up() {
+  @media (min-width: $screen--lg) {
+    @content;
+  }
+}
+
+@mixin screen--md-down() {
+  @media (max-width: $screen--lg - 1) {
+    @content;
+  }
+}
+
+@mixin screen--sm-down() {
+  @media (max-width: $screen--md - 1) {
+    @content;
+  }
+}
+
+@mixin screen--xs-only() {
+  @media (max-width: $screen--sm - 1) {
+    @content;
+  }
+}

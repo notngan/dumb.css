@@ -81,9 +81,9 @@ const js = done => {
 }
 
 const watchFiles = () => {
+  gulp.watch(`${path.src}/scss/**/*.scss`, css)
   gulp.watch(`${path.src}/html/**/*.html`, gulp.series(html, browserSyncReload))
   gulp.watch(`${path.src}/js/**/*.js`, gulp.series(js, browserSyncReload)) 
-  gulp.watch(`${path.src}/scss/**/*.scss`, css)
 }
 
 exports.html = html

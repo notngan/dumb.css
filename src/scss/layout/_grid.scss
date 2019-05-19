@@ -1,0 +1,51 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-gutter-width / 2;
+  margin-right: -$grid-gutter-width / 2;
+}
+
+[class*='col-'] {
+  background-color: $color-gray-400;
+  margin-left: $grid-gutter-width / 2;
+  margin-right: $grid-gutter-width / 2;
+  max-width: 100%;
+}
+
+@for $i from 1 through $grid-column-number {
+  .col-#{$i} {
+    width: calc(#{$i / $grid-column-number * 100%} - #{$grid-gutter-width});
+  }
+}
+
+@include screen--md-down() {
+  @for $i from 1 through $grid-column-number {
+    .col--md-#{$i} {
+      width: calc(#{$i / $grid-column-number * 100%} - #{$grid-gutter-width});
+    }
+  }
+}
+
+@include screen--sm-down() {
+  @for $i from 1 through $grid-column-number {
+    .col--sm-#{$i} {
+      width: calc(#{$i / $grid-column-number * 100%} - #{$grid-gutter-width});
+    }
+  }
+}
+
+@include screen--xs-only() {
+  @for $i from 1 through $grid-column-number {
+    .col--xs-#{$i} {
+      width: calc(#{$i / $grid-column-number * 100%} - #{$grid-gutter-width});
+    }
+  }
+}

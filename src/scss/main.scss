@@ -1,3 +1,11 @@
-// modules
-@import './layout/header';
+// abstract
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
+// base 
+@import './base/minireset';
+@import './base/typography';
+
+// layout
+@import './layout/header';
+@import './layout/grid';
